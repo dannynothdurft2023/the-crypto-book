@@ -36,6 +36,8 @@ export default function Home() {
               Buch &quot;The CryptoBook - Lexikon&quot; zu informieren und freue
               mich darauf, Sie als Leserinnen und Leser begrüßen zu dürfen.
             </p>
+
+            <button>Zu Amazon</button>
           </div>
         </div>
       </main>
