@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ export default function Navigation() {
 
   return (
     <div className={scrolled ? "navigation header-scolled" : "navigation"}>
-      Navigation
+      <Link href="/">Home</Link>
     </div>
   );
 }
