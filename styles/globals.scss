@@ -71,9 +71,10 @@ h3 {
   background-color: #eeeeee;
 
   .header {
+    height: 100%;
     padding-top: 50px;
     color: #ffffff;
-    background-image: -webkit-linear-gradient(90deg, #af0433 0%, #000000 100%);
+    background-image: -webkit-linear-gradient(90deg, #eeeeee 0%, #000000 100%);
     display: flex;
     justify-content: center;
 
