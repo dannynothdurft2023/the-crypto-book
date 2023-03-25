@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+
+.box {
+  margin-top: 20px;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid red;
+  width: max-content;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 14px 0;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
+
+.header-scolled {
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+  background: rgba(34, 34, 34, 0.9);
+  transition: all 0.5s;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.start-page {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: #eeeeee;
+
+  .header {
+    padding-top: 50px;
+    color: #ffffff;
+    background-image: -webkit-linear-gradient(90deg, #af0433 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+
+    div {
+      width: 900px;
+      padding: 25px;
+
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.impressum-page {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+
+  main {
+    min-width: 300px;
+    width: 600px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 3px #cccccc;
+    text-align: center;
+    background-color: #ffffff;
+  }
+}
+
+.datenschutz-page {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+
+  main {
+    min-width: 300px;
+    width: 900px;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 0px 0px 5px 3px #cccccc;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
