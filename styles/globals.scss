@@ -40,6 +40,11 @@ h3 {
   top: 0;
   transition: all 0.5s;
   z-index: 999;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 .header-scolled {
