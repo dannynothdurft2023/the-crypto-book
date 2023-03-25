@@ -37,7 +37,7 @@ export default function Home() {
               mich darauf, Sie als Leserinnen und Leser begrüßen zu dürfen.
             </p>
 
-            <button>Zu Amazon Shop</button>
+            <button>Zu Amazon</button>
           </div>
         </div>
       </main>
