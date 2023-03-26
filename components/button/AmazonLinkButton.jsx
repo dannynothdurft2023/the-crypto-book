@@ -21,12 +21,12 @@ const Button = styled.a`
   padding: ${(props) => {
     if (props.size === "small") return "3px 10px";
     if (props.size === "large") return "12px 28px";
-    return "8px 20px"; // default value
+    return "8px 20px";
   }};
   font-size: ${(props) => {
     if (props.size === "small") return "12px";
     if (props.size === "large") return "20px";
-    return "16px"; // default value
+    return "16px";
   }};
   font-weight: bold;
   color: #fff;
