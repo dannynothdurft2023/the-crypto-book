@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/home/Header";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       </Head>
 
       <main className="start-page">
-        <div className="header">
+        <Header />
+        <div>
           <Image
             src={"/images/TCB_Cover.png"}
             alt="The CryptoBook - Lexikon / Cover"
