@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import AmazonLinkButton from "../button/AmazonLinkButton";
 
 function Product() {
   return (
-    <div>
+    <div className="product-component">
       <Image
         src={"/images/TCB_Cover.png"}
         alt="The CryptoBook - Lexikon / Cover"
@@ -11,8 +12,6 @@ function Product() {
         height={551}
       />
       <div>
-        <h1>The CryptoBook - Lexikon</h1>
-
         <p>
           Willkommen auf dieser Webseite! Hier finden Sie alle Informationen
           rund um das Buch über Kryptowährungen. Als Lexikon konzipiert, bietet
@@ -26,7 +25,7 @@ function Product() {
           als Leserinnen und Leser begrüßen zu dürfen.
         </p>
 
-        <button>Zu Amazon</button>
+        <AmazonLinkButton />
       </div>
     </div>
   );
