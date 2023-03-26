@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Nav } from "./styled-components/generally";
 import Link from "next/link";
+import AmazonLinkButton from "./button/AmazonLinkButton";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,8 +21,11 @@ export default function Navigation() {
   }, []);
 
   return (
-    <div className={scrolled ? "navigation header-scolled" : "navigation"}>
-      <Link href="/">Home</Link>
-    </div>
+    <Nav className={scrolled ? "navigation header-scolled" : "navigation"}>
+      <div>
+        <Link href="/">Home</Link>
+        <AmazonLinkButton size="small" />
+      </div>
+    </Nav>
   );
 }
