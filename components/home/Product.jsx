@@ -1,16 +1,17 @@
 import React from "react";
-import Image from "next/image";
+import { AdvancedImage } from "@cloudinary/react";
+import { fill } from "@cloudinary/url-gen/actions/resize";
+import { CloudinaryImage } from "@cloudinary/url-gen";
 import AmazonLinkButton from "../button/AmazonLinkButton";
 
 function Product() {
+  const Cover = new CloudinaryImage("TCB_Cover", {
+    cloudName: "dca67w0ia",
+  }).resize(fill().width(345).height(551));
+
   return (
     <div className="product-component">
-      <Image
-        src={"/images/TCB_Cover.png"}
-        alt="The CryptoBook - Lexikon / Cover"
-        width={345}
-        height={551}
-      />
+      <AdvancedImage cldImg={Cover} />
       <div>
         <p>
           Willkommen auf dieser Webseite! Hier finden Sie alle Informationen
